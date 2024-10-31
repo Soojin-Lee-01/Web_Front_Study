@@ -1,0 +1,16 @@
+@import url(./import.css);
+
+li{
+    color: red;
+    background-color: blue;
+}
+
+/* 내장 스타일 태그보다 위치에 따름 */
+p{
+    background-color: black;
+    color: red;
+}
+
+div{
+    background-color: yellow;
+}

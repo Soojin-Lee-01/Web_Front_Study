@@ -1,0 +1,55 @@
+.box{
+    display: inline-block;
+    width: 400px;
+    height: 800px;
+    border: 1px solid black;
+}
+
+.background{
+    background-color: aquamarine;
+    background: palegoldenrod;
+
+    /* color image repeat position/size .. */
+    background: linear-gradient(to right, black, white);
+}
+
+.background-image{
+    /* 사진의 시작점은 왼쪽 위, 반복되고 있음 */
+    background-image: url('./image/small_img.png');
+
+    /* 1. background-repeat */
+    background-repeat: repeat;
+    background-repeat: repeat-y;
+    background-repeat: repeat-x;
+    background-repeat: no-repeat;
+
+    /* 2. background-position */
+    background-position: top left;
+    background-position: center;
+    background-position: top center;
+    background-position: 100px;
+    background-position: 100px 10px; /* x축 y축 순서 */
+
+    /* 3. background-size */
+    /* 원본 사이즈 유지 */
+    background-size: auto;
+    /* size를 하나만 쓰면 가로너비 설정되고, 세로는 비율에 맞춰서 자동설정됨 */
+    /* 가로축 50px, 세로축은 원본 비율에 맞게.. */
+    /* background-size: 50px; */
+    /* x축 y축 순서 */
+    background-size: 100px 200px;
+    /* 요소가 꽉차게 만들어줌 */
+    /* background-size: cover; */
+    background-size: 100px; 
+    background-size: contain;
+    background-size: cover;
+
+
+    /* 4. background-attachment */
+    background-attachment: scroll;
+    background-attachment: fixed;
+}
+
+body{
+    height: 1000px;
+}
