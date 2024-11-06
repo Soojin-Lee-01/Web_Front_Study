@@ -132,3 +132,165 @@ console.log(typeof null) // object
 console.log(typeof und) // object
 console.log(typeof NaN) // number
 console.log(typeof function(){}) // function
+
+
+// 형변환
+console.log('---------------------')
+
+// 1. ?? >> string
+let str1 = true
+let str2 = 123
+let str3 = null
+
+console.log(typeof String(str1))
+console.log(typeof String(str2))
+console.log(typeof String(str3))
+console.log(typeof str1.toString())
+
+
+// 2. ?? >> number
+let n1 = true
+let n1_1 = false
+let n2 = "123"
+let n3 = "123.5"
+
+console.log(typeof Number(n1)) // true > 1
+console.log(typeof Number(n1_1)) // false > 0
+console.log(typeof Number(n2))
+console.log(typeof Number(n3))
+console.log(parseInt(n2))
+console.log(parseInt(n3))
+console.log(parseInt(3.14))
+
+
+// prompt는 문자열로 들어온다.
+
+/*
+let english = prompt("영어 점수를 입력해주세요.") 
+let math = prompt("수학 점수를 입력해주세요.")
+
+english = Number(english)
+math = Number(math)
+
+let average = ((parseInt(english) + parseInt(math)) / 2)
+
+console.log(average)
+*/
+
+// 변수
+// var - 재할당, 재선언 모두 가능
+var name = "홍길동"
+name = "gildong" // 재할당 가능
+
+var name = "성춘향" // 재선언 가능
+// 재선언 가능한 것이 장점같을 수는 있으나
+// 협업과 유지보수에 힘들다.
+
+// 2. let - 재할당 가능, 재선언 불가
+let c; // 선언과 값의 초기화를 동시에 하지 않아도 됨
+console.log(c) // undefined
+c = 5 // 재할당 가능
+c = 10
+c = 15
+console.log(c)
+// let c = 12 // 재선언 불가능
+
+// 3. const - 재할당, 재선언 불가
+// const b // 선언과 동시에 초기화되어야 합니다. 
+const b = 3
+// const b = 5 // 재선언 불가능
+// b = 5 // 재할당 불가능
+
+let q1 = 3
+q1 - 2
+console.log(q1) // 3
+
+let q2  = 10
+q2 += 10
+q2 -= 5
+console.log(q2)
+
+console.log("===연산자===")
+/** 
+ * 연산자
+ * 대입연산자 = 
+ * 비교연산자 == === != !== > >= < <=
+ * 산술연산자 + - * / % **
+ * 논리연산자 ! && ||
+*/
+
+// 비교연산자
+// 비교연산자의 결과값은 true나 false
+// == === != !== > >= < <=
+console.log(1==1)
+console.log(1==2)
+console.log(1 != 1)
+console.log(1 != 2)
+console.log(1 == "1")
+console.log(1 != "1")
+console.log(1 == "2")
+
+console.log("(=== 비교)") // data type 판별
+console.log(1===1)
+console.log(1===2)
+console.log(1 !== 1)
+console.log(1 !== 2)
+console.log(1 === "1")
+console.log(1 !== "1")
+console.log(1 === "2")
+
+console.log("크기비교")
+console.log(2 > 1)
+console.log(2 >= 1)
+console.log(2 < 1)
+console.log(2 <= 1)
+
+console.log("산술연산자")
+console.log(1+2)
+console.log(1-2)
+console.log(1*2)
+console.log(1/2)
+
+// 나머지 연산자
+console.log(8%5)
+console.log(2**5)
+
+// 논리 연산자 (! && ||)
+console.log(true)
+console.log(false)
+console.log(!true)
+console.log(!false)
+console.log(!!false)
+console.log(true && true) // true
+console.log(false && true) // false , false가 앞에있는게 성능이 좋다.
+console.log(false && false) // false
+console.log(true || true) // true
+console.log(false || true) // true
+console.log(false || false) // false
+
+console.log(!(2 > 1)) // false
+console.log(2 > 1 && -2 < 1) // true
+console.log((2 > 1 && 0 > -2) || 5 < 2) // true
+
+console.log('---------------')
+// == 연산자 이용
+console.log("0" == false)
+console.log("0"==0)
+console.log(""==0)
+console.log(undefined==null)
+console.log(0==false)
+
+console.log("" == "0")
+console.log(false==undefined)
+console.log(false==null)
+
+console.log('===')
+console.log("0" === false)
+console.log("0"===0)
+console.log(""===0)
+console.log(undefined===null)
+console.log(0===false)
+
+
+
+
