@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .main{
+            display: flex;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            border: 1px solid red;
+            margin-right: 20px;   
+        }
+
+        @media screen and (max-width: 700px ) {
+            .box{
+                background-color: skyblue;
+                margin-bottom: 20px;
+                
+            }
+            .main{
+                display: flex;
+                flex-direction: column;
+
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div class="main">
+        <div class="box item1"></div>
+        <div class="box item2"></div>
+        <div class="box item3"></div>
+    </div>
+
+    
+</body>
+</html>
