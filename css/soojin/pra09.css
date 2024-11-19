@@ -1,0 +1,24 @@
+.box{
+    width: 800px;
+    height: 500px;
+    background-color: skyblue;
+    margin: 10px;
+    background-image: url('../image/san.png');
+}
+
+.item1{
+    background-repeat: repeat-x;
+    background-position: center;
+}
+
+.item2{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 100px 30px;
+}
+
+.item3{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}

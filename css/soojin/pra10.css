@@ -1,0 +1,36 @@
+.container{
+    width: 500px;
+    height: 500px;
+    background-color: blue;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+}
+
+.item1{
+    background-color: red;
+}
+.item2{
+    background-color: green;
+}
+.item3{
+    background-color: yellow;
+}
+
+.main{
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.next{
+    width: 100px;
+    height: 100px;
+    border: 1px solid pink;
+}

@@ -1,0 +1,19 @@
+.container{
+    width: 500px;
+    height: 500px;
+    background-color: skyblue;
+    display: flex;
+    flex-wrap: wrap;
+    /* align-content: flex-start; */
+    /* justify-content: flex-end; */
+    /* 가운데 정렬 */
+    align-items: center;
+    justify-content: center;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    border: 1px solid black;
+}
