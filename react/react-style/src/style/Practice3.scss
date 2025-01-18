@@ -1,0 +1,30 @@
+@mixin animation($degree) {
+  @keyframes identifier {
+    0% {
+      transform: rotate($degree);
+    }
+    50% {
+      transform: rotate($degree + 100);
+    }
+    100% {
+      transform: rotate($degree + 100);
+    }
+  }
+  animation-name: identifier;
+  animation-duration: 2s;
+}
+
+@mixin circle($circleColor) {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-color: $circleColor;
+  @include animation(0);
+}
+
+.circle {
+  &:nth-child(1) {
+    @include circle(blue);
+  }
+}
