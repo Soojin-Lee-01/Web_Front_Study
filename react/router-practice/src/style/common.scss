@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+}
+
+// header
+.Header {
+  background-color: #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+
+  .menu-item {
+    margin: 0 8px;
+  }
+}
